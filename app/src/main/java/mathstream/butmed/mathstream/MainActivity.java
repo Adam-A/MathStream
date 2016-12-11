@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity { //main activity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        MobileAds.initialize(getApplicationContext(), "ca-app-pub-6495987282334475~1892641541");
+        MobileAds.initialize(getApplicationContext(), "MY FIREBASE KEY");
         bannerAd = (AdView) findViewById(R.id.adView1);
         AdRequest adRequest = new AdRequest.Builder().build();
         bannerAd.loadAd(adRequest);
