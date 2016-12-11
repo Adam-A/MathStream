@@ -36,7 +36,7 @@ public class Achievements extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_achievements);
 
-        MobileAds.initialize(getApplicationContext(), "ca-app-pub-6495987282334475~1892641541");
+        MobileAds.initialize(getApplicationContext(), "MY FIREBASE KEY");
         bannerAdStats = (AdView) findViewById(R.id.adView1);
         AdRequest adRequest = new AdRequest.Builder().build();
         bannerAdStats.loadAd(adRequest);
